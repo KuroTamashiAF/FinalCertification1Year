@@ -90,9 +90,6 @@ VALUES
 ("Старая", 6, "2017-01-01", FALSE, FALSE, "Высоко прыгает");
 ## SELECT * FROM Goat;
 
-
-
-
 CREATE TABLE Cow
 (
 Cow_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
@@ -103,6 +100,12 @@ Cow_getMilk BOOLEAN,
 Cow_methods VARCHAR(50)
 );
 ## DROP TABLE Cow;
+INSERT INTO Cow (Cow_name, Cow_age, Cow_Date_Bith, Cow_getMilk, Cow_methods)
+VALUES
+("Буренка", 10, "2013-06-03",TRUE, "Давать молоко" ),
+("Жувайка", 7, "2016-02-13", TRUE, "МЫчать много, давать молоко"),
+("Мавашка", 3, "2020-10-11", FALSE, "бЕГАТЬ И СКАКАТЬ" ); 
+## SELECT * FROM Cow;
 
 CREATE TABLE Ram
 (
