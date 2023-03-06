@@ -6,13 +6,19 @@ use HumanFriends;
 CREATE TABLE Cat
 (
 Cat_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-Cat_name VARCHAR(10) NOT NULL, 
+Cat_name VARCHAR(20) NOT NULL, 
 Cat_age INT, 
 Cat_Date_Bith DATE, 
 Cat_sound VARCHAR(5) NOT NULL, 
 CAt_methods VARCHAR(50)
 );
 ## DROP TABLE Cat;
+INSERT INTO Cat (Cat_name, Cat_age, Cat_Date_Bith, Cat_sound, CAt_methods)
+VALUES
+("Сфинкс", 3000, "1111-11-11", "Хмм","Задать загадку"),
+("Пантера", 2, "2022-02-21", "Жмяк","Охотиться" ),
+("Кошак ГАлактуса",5000, "0000-07-22", "Хрум", "Скушать планету");
+
 CREATE TABLE Dog
 (
 Dog_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
@@ -23,6 +29,13 @@ Dog_sound VARCHAR(5) NOT NULL,
 Dog_methods VARCHAR(50)
 );
 ## DROP TABLE Dog;
+
+
+
+
+
+
+
 CREATE TABLE Hamster
 (
 Hamster_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
@@ -90,4 +103,8 @@ Horse_methods VARCHAR(50)
 );
 ## DROP TABLE Horse;
 ## Все работет ошибок нет на данном этапе !!
+
+
+
+
 
