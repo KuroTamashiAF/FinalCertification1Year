@@ -22,4 +22,72 @@ Dog_Date_Bith DATE,
 Dog_sound VARCHAR(5) NOT NULL, 
 Dog_methods VARCHAR(50)
 );
-## DROP TABLE Cat;
+## DROP TABLE Dog;
+CREATE TABLE Hamster
+(
+Hamster_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+Hamster_name VARCHAR(10) NOT NULL, 
+Hamster_age INT, 
+Hamster_Date_Bith DATE, 
+Hamster_methods VARCHAR(50)
+);
+## DROP TABLE Hamster;
+
+CREATE TABLE Parrot
+(
+Parrot_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+Parrot_name VARCHAR(10) NOT NULL, 
+Parrot_age INT, 
+Parrot_Date_Bith DATE, 
+Parrot_talk BOOLEAN, 
+Parrot_methods VARCHAR(50)
+);
+## DROP TABLE Parrot;
+
+CREATE TABLE Goat
+(
+Goat_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+Goat_name VARCHAR(10) NOT NULL, 
+Goat_age INT, 
+Goat_Date_Bith DATE, 
+Goat_buttingHeads BOOLEAN, 
+Goat_getMilk BOOLEAN,  
+Goat_methods VARCHAR(50)
+);
+## DROP TABLE Goat;
+
+CREATE TABLE Cow
+(
+Cow_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+Cow_name VARCHAR(10) NOT NULL, 
+Cow_age INT, 
+Cow_Date_Bith DATE, 
+Cow_getMilk BOOLEAN,  
+Cow_methods VARCHAR(50)
+);
+## DROP TABLE Cow;
+
+CREATE TABLE Ram
+(
+Ram_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+Ram_name VARCHAR(10) NOT NULL, 
+Ram_age INT, 
+Ram_Date_Bith DATE, 
+Ram_quantityWool INT NOT NULL,
+Ram_methods VARCHAR(50)
+);
+## DROP TABLE Ram;
+
+
+CREATE TABLE Horse
+(
+Horse_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+Horse_name VARCHAR(10) NOT NULL, 
+Horse_age INT, 
+Horse_Date_Bith DATE, 
+Horse_loadCapasity INT NOT NULL,
+Horse_methods VARCHAR(50)
+);
+## DROP TABLE Horse;
+## Все работет ошибок нет на данном этапе !!
+
