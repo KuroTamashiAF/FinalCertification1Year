@@ -29,7 +29,12 @@ Dog_sound VARCHAR(5) NOT NULL,
 Dog_methods VARCHAR(50)
 );
 ## DROP TABLE Dog;
-
+INSERT INTO Dog (Dog_name, Dog_age, Dog_Date_Bith, Dog_sound, Dog_methods)
+VALUES
+("Джой",  7, "2017-01-23", "Мычит", "Сходить с ума, Просить кушать"), 
+("Цербер", 2000, "0000-01-01", "0-0", "Охранять вход в царство мертвых"),
+("Мелочь", 4, "2019-11-17", "тЯФ", " Дрожать от страха, Быть тупой");
+## SELECT * FROM DOG;
 
 
 
