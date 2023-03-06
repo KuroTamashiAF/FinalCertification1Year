@@ -57,7 +57,7 @@ VALUES
 CREATE TABLE Parrot
 (
 Parrot_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-Parrot_name VARCHAR(10) NOT NULL, 
+Parrot_name VARCHAR(13) NOT NULL, 
 Parrot_age INT, 
 Parrot_Date_Bith DATE, 
 Parrot_talk BOOLEAN, 
@@ -66,9 +66,12 @@ Parrot_methods VARCHAR(50)
 ## DROP TABLE Parrot;
 INSERT INTO Parrot (Parrot_name, Parrot_age, Parrot_Date_Bith, Parrot_talk, Parrot_methods)
 VALUES
-(); 
+("Кеша", 2, "2021-03-06", TRUE,"Свободу попугаям. Кия" ), 
+("Птерадактель", 64002023, "0001-01-01", FALSE, "Как в парке юрского периода"), 
+("Жар Птица", 223, "1800-01-01", TRUE, "Помогать Ивану Царевичу во всякой фигне");
+  
 
-## SELECT * FROM Parrot;
+SELECT * FROM Parrot;
 
 
 
