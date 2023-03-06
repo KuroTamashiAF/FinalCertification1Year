@@ -117,7 +117,13 @@ Ram_quantityWool INT NOT NULL,
 Ram_methods VARCHAR(50)
 );
 ## DROP TABLE Ram;
+INSERT INTO Ram (Ram_name, Ram_age, Ram_Date_Bith, Ram_quantityWool, Ram_methods)
+VALUES
+("Бобер", 4, "2019-06-05", 4, "Бадаться" ),
+("Волосатый", 6, "),
+("");
 
+## SELECT * FROM Ram;
 
 CREATE TABLE Horse
 (
