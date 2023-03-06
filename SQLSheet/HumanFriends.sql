@@ -70,11 +70,7 @@ VALUES
 ("Птерадактель", 64002023, "0001-01-01", FALSE, "Как в парке юрского периода"), 
 ("Жар Птица", 223, "1800-01-01", TRUE, "Помогать Ивану Царевичу во всякой фигне");
   
-
-SELECT * FROM Parrot;
-
-
-
+## SELECT * FROM Parrot;
 
 CREATE TABLE Goat
 (
@@ -87,6 +83,15 @@ Goat_getMilk BOOLEAN,
 Goat_methods VARCHAR(50)
 );
 ## DROP TABLE Goat;
+INSERT INTO Goat (Goat_name, Goat_age, Goat_Date_Bith, Goat_buttingHeads, Goat_getMilk, Goat_methods)
+VALUES
+("Бадалка",5, "2018-10-17",TRUE, TRUE, "Забодает кого хочешь"),
+("НеБадалка", 3, "2020-01-20",FALSE, TRUE, "Давать козье молоко" ),
+("Старая", 6, "2017-01-01", FALSE, FALSE, "Высоко прыгает");
+## SELECT * FROM Goat;
+
+
+
 
 CREATE TABLE Cow
 (
