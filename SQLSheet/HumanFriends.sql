@@ -18,6 +18,7 @@ VALUES
 ("Сфинкс", 3000, "1111-11-11", "Хмм","Задать загадку"),
 ("Пантера", 2, "2022-02-21", "Жмяк","Охотиться" ),
 ("Кошак ГАлактуса",5000, "0000-07-22", "Хрум", "Скушать планету");
+## SELECT * FROM Cat;
 
 CREATE TABLE Dog
 (
@@ -36,11 +37,6 @@ VALUES
 ("Мелочь", 4, "2019-11-17", "тЯФ", " Дрожать от страха, Быть тупой");
 ## SELECT * FROM DOG;
 
-
-
-
-
-
 CREATE TABLE Hamster
 (
 Hamster_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
@@ -50,6 +46,13 @@ Hamster_Date_Bith DATE,
 Hamster_methods VARCHAR(50)
 );
 ## DROP TABLE Hamster;
+INSERT INTO Hamster (Hamster_name, Hamster_age, Hamster_Date_Bith, Hamster_methods)
+VALUES
+("Хома", 2, "2021-02-17", "Шуршать ночью пока все спят"),
+("Жена Хомы", 3, "2020-07-21", "Пилить Хому за просто так =)"),
+("Детё Хомы", 1, "2022-01-01", "Тостеть и ни хрена не делать"); 
+
+##SELECT * FROM Hamster;
 
 CREATE TABLE Parrot
 (
@@ -61,6 +64,14 @@ Parrot_talk BOOLEAN,
 Parrot_methods VARCHAR(50)
 );
 ## DROP TABLE Parrot;
+INSERT INTO Parrot (Parrot_name, Parrot_age, Parrot_Date_Bith, Parrot_talk, Parrot_methods)
+VALUES
+(); 
+
+## SELECT * FROM Parrot;
+
+
+
 
 CREATE TABLE Goat
 (
