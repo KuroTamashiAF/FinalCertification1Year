@@ -142,8 +142,22 @@ VALUES
 ("Росинант", 20, "1605-01-01", 80, "Превозмогать, Дон Кихот");
 ## SELECT * FROM Horse;
 
-
-
+CREATE TABLE Camel
+(
+Camel_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+Camel_name VARCHAR(10) NOT NULL, 
+Camel_age INT, 
+Camel_Date_Bith DATE, 
+Camel_loadCapasityKG INT NOT NULL,
+Camel_methods VARCHAR(50)
+);
+## DROP TABLE Camel;
+INSERT INTO Camel (Camel_name, Camel_age, Camel_Date_Bith, Camel_loadCapasityKG, Camel_methods)
+VALUES
+("Аид", 2, "2021-07-03", 100, "Перевозить грузы и людей"),
+("Плевун", 5, "2018-03-21", 115, "Плеваться"),
+("Орун", 8, "2015-01-23", 95, "Орать");
+## SELECT * FROM Horse;
 
 
 ## Все работет ошибок нет на данном этапе !!
