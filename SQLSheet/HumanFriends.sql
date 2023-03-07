@@ -131,16 +131,16 @@ Horse_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 Horse_name VARCHAR(10) NOT NULL, 
 Horse_age INT, 
 Horse_Date_Bith DATE, 
-Horse_loadCapasity INT NOT NULL,
+Horse_loadCapasityKG INT NOT NULL,
 Horse_methods VARCHAR(50)
 );
 ## DROP TABLE Horse;
-INSERT INTO Ram (Ram_name, Ram_age, Ram_Date_Bith, Ram_quantityWool, Ram_methods)
+INSERT INTO Horse (Horse_name, Horse_age, Horse_Date_Bith, Horse_loadCapasityKG, Horse_methods)
 VALUES
-("Бобер", 4, "2019-06-05", 4, "Бадаться" ),
-("Волосатый", 6, "2017-05-30", 10, "БЕЕЕКАТЬ" ),
-("Зелень", 2, "2021-10-11", 1, " ");
-SELECT * FROM Horse;
+("Крокант", 5, "2018-05-01", 50, "Кушать сено и сахар, попрошайничать"),
+("Камикадзе", 15, "2008-07-11", 100, "Катать детишек"),
+("Росинант", 20, "1605-01-01", 80, "Превозмогать, Дон Кихот");
+## SELECT * FROM Horse;
 
 ## Все работет ошибок нет на данном этапе !!
 
