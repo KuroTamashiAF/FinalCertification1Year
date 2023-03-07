@@ -117,13 +117,13 @@ Ram_quantityWool INT NOT NULL,
 Ram_methods VARCHAR(50)
 );
 ## DROP TABLE Ram;
+
 INSERT INTO Ram (Ram_name, Ram_age, Ram_Date_Bith, Ram_quantityWool, Ram_methods)
 VALUES
 ("Бобер", 4, "2019-06-05", 4, "Бадаться" ),
-("Волосатый", 6, "),
-("");
-
-## SELECT * FROM Ram;
+("Волосатый", 6, "2017-05-30", 10, "БЕЕЕКАТЬ" ),
+("Зелень", 2, "2021-10-11", 1, " ");
+SELECT * FROM Ram;
 
 CREATE TABLE Horse
 (
@@ -135,6 +135,13 @@ Horse_loadCapasity INT NOT NULL,
 Horse_methods VARCHAR(50)
 );
 ## DROP TABLE Horse;
+INSERT INTO Ram (Ram_name, Ram_age, Ram_Date_Bith, Ram_quantityWool, Ram_methods)
+VALUES
+("Бобер", 4, "2019-06-05", 4, "Бадаться" ),
+("Волосатый", 6, "2017-05-30", 10, "БЕЕЕКАТЬ" ),
+("Зелень", 2, "2021-10-11", 1, " ");
+SELECT * FROM Horse;
+
 ## Все работет ошибок нет на данном этапе !!
 
 
