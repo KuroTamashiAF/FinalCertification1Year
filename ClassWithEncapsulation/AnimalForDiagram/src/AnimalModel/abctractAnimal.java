@@ -5,9 +5,9 @@ import java.util.Date;
 public abstract class abctractAnimal {
     private String name;
     private int age;
-    private Date dateOfBith;
+    private String dateOfBith;
 
-    public abctractAnimal(String name, int age, Date dateOfBith) {
+    public abctractAnimal(String name, int age, String dateOfBith) {
         this.name = name;
         this.age = age;
         this.dateOfBith = dateOfBith;
@@ -21,7 +21,7 @@ public abstract class abctractAnimal {
         return age;
     }
 
-    public Date getDateOfBith() {
+    public String getDateOfBith() {
         return dateOfBith;
     }
 

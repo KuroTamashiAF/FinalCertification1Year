@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Dog extends abctractAnimal{
     public String sound;
-    Dog(String name, int age, Date date){
+    Dog(String name, int age, String date){
         super(name, age,date );
         this.sound =  "Woof";
     }

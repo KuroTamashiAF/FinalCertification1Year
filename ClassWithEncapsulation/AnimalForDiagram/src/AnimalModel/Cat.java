@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Cat extends abctractAnimal{
     public String sound;
-    Cat(String name, int age, Date date){
+    public Cat(String name, int age, String date){
         super(name, age,date );
         this.sound =  "meow";
     }
