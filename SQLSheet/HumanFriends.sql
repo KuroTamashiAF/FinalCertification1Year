@@ -1,7 +1,7 @@
 ## создать базу данных HumanFriends
 CREATE DATABASE HumanFriends;
 use HumanFriends;
-## DROP DATABASE HumanFriends;
+##DROP DATABASE HumanFriends;
 ## Создаем таблицы из схемы 
 CREATE TABLE Cat
 (
@@ -199,9 +199,34 @@ SELECT * FROM packAnimalUnion;
 
 CREATE TABLE youngAnimal
 (Id INT PRIMARY KEY AUTO_INCREMENT)
-SELECT * FROM packAnimalUnion
-WHERE ROUND((YEAR(CURRENT_DATE)-YEAR(Date_Bith)+ (MONTH(CURRENT_DATE) -MONTH(Date_Bith))/10),2) as Age_new
-FROM packAnimalUnion;
+SELECT Name, Age,
+ROUND(YEAR(CURRENT_DATE)-YEAR(Date_Bith)+ (MONTH(CURRENT_DATE) -MONTH(Date_Bith))/10,2) as AgeS,
+Date_Bith, Methods
+FROM packAnimalUnion
+WHERE ROUND((YEAR(CURRENT_DATE)-YEAR(Date_Bith)+ (MONTH(CURRENT_DATE) -MONTH(Date_Bith))/10),2)>1 AND 
+ROUND(YEAR(CURRENT_DATE)-YEAR(Date_Bith)+ (MONTH(CURRENT_DATE) -MONTH(Date_Bith))/10,2)<=3;
+SELECT * FROM youngAnimal;
+## DROP TABLE youngAnimal;
+
+##Объединить все таблицы в одну, при этом сохраняя поля, указывающие напрошлую принадлежность к старым таблицам.
+
+CREATE TABLE packAnimalForUnion
+(id INT PRIMARY KEY AUTO_INCREMENT)
+SELECT Name, Age, Date_Bith, Methods, "Horse" as oldTable
+FROM Horse
+UNION 
+SELECT Name, Age, Date_Bith, Methods, "Ram" as oldTable
+FROM Ram
+UNION
+SELECT Name, Age, Date_Bith, Methods, "Goat" as oldTable
+FROM Goat
+UNION
+SELECT Name, Age, Date_Bith, Methods, "Cow" as oldTable
+FROM Cow;
+SELECT * FROM packAnimalForUnion;
+
+
+
 
 
 
