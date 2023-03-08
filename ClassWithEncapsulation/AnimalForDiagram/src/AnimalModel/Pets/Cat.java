@@ -1,8 +1,10 @@
-package AnimalModel;
+package AnimalModel.Pets;
+
+import AnimalModel.abctractAnimal;
 
 import java.util.Date;
 
-public class Cat extends abctractAnimal{
+public class Cat extends abctractAnimal {
     public String sound;
     public Cat(String name, int age, String date){
         super(name, age,date );

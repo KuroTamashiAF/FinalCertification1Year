@@ -1,8 +1,10 @@
-package AnimalModel;
+package AnimalModel.Pets;
+
+import AnimalModel.abctractAnimal;
 
 import java.util.Date;
 
-public class Hamster extends abctractAnimal{
+public class Hamster extends abctractAnimal {
 
 
     public Hamster(String name, int age, String dateOfBith) {
