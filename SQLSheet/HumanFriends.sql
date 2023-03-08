@@ -167,6 +167,16 @@ WHERE Camel_id >0;
 SELECT * FROM Camel;
 ## НО ПРОЩЕ БЫЛО БЫ УДАЛИТЬ ПРОСТО ТАБЛИЦУ ЦЕЛИКОМ
 
+## Объединить таблицы (Horse, Ram)
+CREATE TABLE HorseRam 
+(id INT PRIMARY KEY AUTO_INCREMENT)
+SELECT Horse_id, Horse_name, Horse_age, Horse_Date_Bith, Horse_loadCapasityKG, Horse_methods
+FROM Horse
+UNION 
+SELECT Ram_id, Ram_name, Ram_age, Ram_Date_Bith, Ram_quantityWool, Ram_methods
+FROM Ram;
+
+SELECT * FROM HorseRam;
 
 
 
