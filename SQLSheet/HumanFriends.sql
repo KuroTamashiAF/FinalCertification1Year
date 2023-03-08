@@ -168,10 +168,29 @@ SELECT Name, Age, Date_Bith, Methods
 FROM Ram;
 
 SELECT * FROM HorseRam;
-DROP TABLE HorseRam;
+## DROP TABLE HorseRam;
 
+CREATE TABLE CowGoat 
+(id INT PRIMARY KEY AUTO_INCREMENT)
+SELECT Name, Age, Date_Bith, Methods
+FROM Cow
+UNION 
+SELECT Name, Age, Date_Bith, Methods
+FROM Goat;
 
+SELECT * FROM CowGoat;
+## DROP TABLE HorseRam;
 
+CREATE TABLE packAnimalUnion 
+(id INT PRIMARY KEY AUTO_INCREMENT)
+SELECT Name, Age, Date_Bith, Methods
+FROM HorseRam
+UNION 
+SELECT Name, Age, Date_Bith, Methods
+FROM CowGoat;
+
+SELECT * FROM packAnimalUnion;
+## DROP TABLE HorseRam;
 
 
 
