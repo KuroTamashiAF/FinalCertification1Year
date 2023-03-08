@@ -1,6 +1,6 @@
 package AnimalModel.Pets;
 
-import AnimalModel.abctractAnimal;
+import AnimalModel.Abstract.abctractAnimal;
 
 public class Parrot extends abctractAnimal {
     private boolean toTalk;

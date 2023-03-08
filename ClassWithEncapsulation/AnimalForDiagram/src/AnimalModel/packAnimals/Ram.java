@@ -1,6 +1,6 @@
 package AnimalModel.packAnimals;
 
-import AnimalModel.abctractAnimal;
+import AnimalModel.Abstract.abctractAnimal;
 
 public class Ram extends abctractAnimal {
     private int quantityWoolKg;

@@ -1,4 +1,4 @@
-package AnimalModel;
+package AnimalModel.Abstract;
 
 import java.util.Date;
 

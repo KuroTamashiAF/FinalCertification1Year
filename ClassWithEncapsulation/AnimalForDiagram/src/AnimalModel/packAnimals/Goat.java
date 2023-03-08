@@ -1,6 +1,6 @@
 package AnimalModel.packAnimals;
 
-import AnimalModel.abctractAnimal;
+import AnimalModel.Abstract.abctractAnimal;
 
 public class Goat extends abctractAnimal {
     private boolean  buttingHeads;
