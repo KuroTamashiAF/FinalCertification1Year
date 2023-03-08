@@ -13,14 +13,9 @@ public class Cat extends abctractAnimal{
         return sound;
     }
 
-
     @Override
     public String toString() {
-        String result = String.format("Имя %s, Возраст %d, день рождения %s, " +
-                "Издаваемый звук %s", getName(), getAge(), getDateOfBith(), getSound());
-        return result;
+        return super.toString()+ String.format(" Издаемый звук %s ", getSound());
     }
-
-        return super.toString();
-    }
+    
 }
