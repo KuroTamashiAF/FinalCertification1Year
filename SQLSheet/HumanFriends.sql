@@ -193,6 +193,17 @@ SELECT * FROM packAnimalUnion;
 ## DROP TABLE HorseRam;
 
 
+/*Создать новую таблицу “молодые животные” в которую попадут все
+животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью
+до месяца подсчитать возраст животных в новой таблице*/
+
+CREATE TABLE youngAnimal
+(Id INT PRIMARY KEY AUTO_INCREMENT)
+SELECT * FROM packAnimalUnion
+WHERE ROUND((YEAR(CURRENT_DATE)-YEAR(Date_Bith)+ (MONTH(CURRENT_DATE) -MONTH(Date_Bith))/10),2) as Age_new
+FROM packAnimalUnion;
+
+
 
 
 
