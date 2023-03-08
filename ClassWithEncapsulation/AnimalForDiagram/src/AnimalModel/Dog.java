@@ -2,11 +2,11 @@ package AnimalModel;
 
 import java.util.Date;
 
-public class Cat extends abctractAnimal{
+public class Dog extends abctractAnimal{
     public String sound;
-    Cat(String name, int age, Date date){
+    Dog(String name, int age, Date date){
         super(name, age,date );
-        this.sound =  "meow";
+        this.sound =  "Woof";
     }
 
     public String getSound() {
@@ -19,3 +19,4 @@ public class Cat extends abctractAnimal{
     }
 
 }
+
