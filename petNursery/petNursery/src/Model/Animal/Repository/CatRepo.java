@@ -31,7 +31,9 @@ public class CatRepo {
         return index;
     }
     public void giveAwayCat(String name){
-        repoCats.remove(findCat(String name));
-        
+        repoCats.remove(findCat(name));
     }
+
+
+
 }
