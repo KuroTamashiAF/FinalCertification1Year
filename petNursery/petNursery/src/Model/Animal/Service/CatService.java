@@ -19,19 +19,9 @@ public class CatService implements ICatService{
         catRepo.addCat(cat);
 
     }
-
-//    @Override
-//    public void SeeAllKitties() {
-//
-//    }
-
-    @Override
-    public void FindKitties(String name) {
-        catRepo.findCat(name)
-    }
-
     @Override
     public void giveTheKitty(String name) {
+        catRepo.giveAwayCat(name);
 
     }
 }
