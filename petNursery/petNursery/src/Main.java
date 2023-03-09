@@ -1,7 +1,5 @@
 import Model.Animal.Cat;
 import Model.Animal.Dog;
-import Model.Animal.Enum.Color;
-import Model.Animal.Enum.Health;
 import Model.Animal.Repository.CatRepo;
 import Model.Animal.Repository.DogRepo;
 import Model.Animal.Service.CatService;
