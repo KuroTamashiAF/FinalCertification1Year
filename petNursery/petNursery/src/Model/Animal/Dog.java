@@ -4,7 +4,7 @@ import Model.Animal.Enum.Color;
 import Model.Animal.Enum.Health;
 import Model.Counter;
 
-public class Cat {
+public class Dog {
     private String name;
     private Color color1;
     private Color color2;
@@ -14,7 +14,7 @@ public class Cat {
     private Health health;
 
 
-    public Cat(String name, Color color1, Color color2, Color color3, int age, String dateOfBirths, Health health) {
+    public Dog(String name, Color color1, Color color2, Color color3, int age, String dateOfBirths, Health health) {
         this.name = name;
         this.color1 = color1;
         this.color2 = color2;
@@ -25,7 +25,7 @@ public class Cat {
         Counter.add();
     }
 
-    public Cat(Color color1) {
+    public Dog(Color color1) {
         this.name =  "Cat";
         this.color1 = color1;
         this.color2 = Color.Black;
