@@ -6,4 +6,5 @@ public interface ICatService {
     public void addCatShelter(Cat cat);
     public void giveTheKitty(String name);
 
+
 }
