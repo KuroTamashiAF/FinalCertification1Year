@@ -28,6 +28,10 @@ public class CatRepo {
             }
             index++;
         }
+        return index;
     }
-
+    public void giveAwayCat(String name){
+        repoCats.remove(findCat(String name));
+        
+    }
 }
