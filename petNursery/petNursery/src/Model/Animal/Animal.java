@@ -2,11 +2,14 @@ package Model.Animal;
 
 import Model.Counter;
 
-public class Animal {
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Animal {
     private String name;
     private int age;
     private String dateOfBirths;
-
+    private List<Command> comandList;
 
 
     public Animal(String name, int age, String dateOfBirths) {
@@ -14,6 +17,7 @@ public class Animal {
         this.age = age;
         this.dateOfBirths = dateOfBirths;
         Counter.add();
+        comandList = new ArrayList<>();
     }
 
     public String getName() {
@@ -38,5 +42,15 @@ public class Animal {
 
     public void setDateOfBirths(String dateOfBirths) {
         this.dateOfBirths = dateOfBirths;
+    }
+    public void addCommand(Command command){
+        comandList.add(command);
+    }
+    public void showCommands(){
+        int i =1;
+        for (Command comand:comandList) {
+            System.out.printf("Команда № %d - %s",i,comand.getCommandtext() );
+            i++;
+        }
     }
 }
