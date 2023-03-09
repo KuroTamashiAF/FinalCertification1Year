@@ -48,8 +48,8 @@ public abstract class Animal {
     }
     public void showCommands(){
         int i =1;
-        for (Command comand:comandList) {
-            System.out.printf("Команда № %d - %s \n",i,comand.getCommandtext() );
+        for (Command command:comandList) {
+            System.out.printf("Команда № %d - %s \n",i,command.getCommandtext() );
             i++;
         }
     }
