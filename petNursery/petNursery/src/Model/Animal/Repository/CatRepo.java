@@ -12,4 +12,22 @@ public class CatRepo {
         this.repoCats = new ArrayList<>();
     }
 
+    public List<Cat> getRepoCats() {
+        return repoCats;
+    }
+    public void addCat(Cat cat){
+        repoCats.add(cat);
+        
+    }
+    public int findCat(String name)
+    {
+        int index =0;
+        for (Cat cat: repoCats) {
+            if (cat.getName().equals(name)){
+                return index;
+            }
+            index++;
+        }
+    }
+
 }
