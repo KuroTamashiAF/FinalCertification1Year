@@ -33,7 +33,13 @@ public class CatRepo {
     public void giveAwayCat(String name){
         repoCats.remove(findCat(name));
     }
+    public void showRepoCats(){
+        for (Cat cat: repoCats) {
+            System.out.printf("Имя %s, возраст %d , дата рождения %s\n",
+                    cat.getName(), cat.getAge(),cat.getDateOfBirths()  );
+        }
 
+    }
 
 
 }

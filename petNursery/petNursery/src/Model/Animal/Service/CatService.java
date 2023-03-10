@@ -3,6 +3,9 @@ package Model.Animal.Service;
 import Model.Animal.Cat;
 import Model.Animal.Repository.CatRepo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CatService implements ICatService{
     private CatRepo catRepo;
 
@@ -24,4 +27,16 @@ public class CatService implements ICatService{
         catRepo.giveAwayCat(name);
 
     }
+
+    @Override
+    public void showListCommands(Cat cat) {
+        catRepo.getRepoCats().get(catRepo.findCat(cat.getName())).showCommands();
+    }
+
+    @Override
+    public void showAllKitty() {
+        catRepo.showRepoCats();
+
+    }
+
 }

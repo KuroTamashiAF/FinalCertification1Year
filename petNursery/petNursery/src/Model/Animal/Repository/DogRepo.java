@@ -16,22 +16,31 @@ public class DogRepo {
     public List<Dog> getRepoDogs() {
         return repoDogs;
     }
-    public void addDog(Dog dog){
+
+    public void addDog(Dog dog) {
         repoDogs.add(dog);
 
     }
-    public int findCat(String name)
-    {
-        int index =0;
-        for (Dog dog: repoDogs) {
-            if (dog.getName().equals(name)){
+
+    public int findDog(String name) {
+        int index = 0;
+        for (Dog dog : repoDogs) {
+            if (dog.getName().equals(name)) {
                 return index;
             }
             index++;
         }
         return index;
     }
-    public void giveAwayDog(String name){
-        repoDogs.remove(findCat(name));
+
+    public void giveAwayDog(String name) {
+        repoDogs.remove(findDog(name));
+    }
+
+    public void showRepoDogs() {
+        for (Dog dog : repoDogs) {
+            System.out.printf("Имя %s, возраст %d , дата рождения %s\n",
+                    dog.getName(), dog.getAge(), dog.getDateOfBirths());
+        }
     }
 }
