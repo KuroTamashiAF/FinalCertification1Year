@@ -12,6 +12,10 @@ public class View {
         this.creators = creators;
     }
 
+    public Creators getCreators() {
+        return creators;
+    }
+
     public void greeting() {
 
         System.out.println("Здравствуйте кого вы хотите завести нажмите 1 " +
@@ -20,17 +24,13 @@ public class View {
         int chooseAnimal =sc.nextInt();
         switch (chooseAnimal){
             case 1:
-
+                creators.creatingCat();
                 break;
             case 2:
                 break;
             default:
                 throw new RuntimeException("Введите 1 или 2 ");
         }
-
-    }
-    public Cat creatingCat(){
-
 
     }
 }
