@@ -1,9 +1,10 @@
 package Model;
 
+import Model.Animal.Iadditional;
 import Model.Animal.Service.ICatService;
 import Model.Animal.Service.IDogService;
 
-public class Model {
+public class Model implements Iadditional {
     private IDogService iDogService;
     private ICatService iCatService;
 
@@ -26,5 +27,11 @@ public class Model {
 
     public void setICatService(ICatService iCatService) {
         this.iCatService = iCatService;
+    }
+
+    @Override
+    public void lookAll() {
+        iDogService.showAllDog();
+        iCatService.showAllKitty();
     }
 }

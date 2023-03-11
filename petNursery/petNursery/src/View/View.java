@@ -1,9 +1,7 @@
 package View;
 
-import Model.Animal.Cat;
 import Model.Model;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class View {
@@ -27,9 +25,9 @@ public class View {
         return creators;
     }
 
-    public void greeting() {
+    public void chooseCreateAnimal() {
 
-        System.out.println("Здравствуйте кого вы хотите завести нажмите 1 " +
+        System.out.println(" Кого вы хотите завести нажмите 1 " +
                 "если Кошечку или 2 если Собачку");
         Scanner sc = new Scanner(System.in);
         int chooseAnimal =sc.nextInt();
@@ -44,5 +42,33 @@ public class View {
                 throw new RuntimeException("Введите 1 или 2 ");
         }
 
+        }
+    public void lookAll(){
+        model.lookAll();
     }
+    public void menu(){
+        System.out.println("Здравствуйте выбирите пункт меню нажав " +
+                "соответствующую клавишу");
+        System.out.println("Нажмите 1 что бы завести новное животное;\n"+
+                "Нажмите 2 посмотреть всех животных");
+        Scanner sc= new Scanner(System.in);
+        int choose = sc.nextInt();
+        switch (choose){
+            case 1:
+                chooseCreateAnimal();
+                break;
+            case 2:
+                lookAll();
+                break;
+            default:
+                throw new RuntimeException("Нижмите 1 или 2 ");
+
+
+
+        }
+
+    }
+
+
+
 }
