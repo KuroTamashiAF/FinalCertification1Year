@@ -48,7 +48,7 @@ public class CatRepo {
     }
     public void showRepoCats(){
         if (repoCats.isEmpty())
-            throw new RuntimeException("В питомнике нет клшек =((");
+            throw new RuntimeException("В питомнике нет кошек =((");
 
         for (Cat cat: repoCats) {
             System.out.printf("Имя %s, возраст %d , дата рождения %s\n",

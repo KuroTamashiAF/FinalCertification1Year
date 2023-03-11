@@ -20,9 +20,4 @@ public class Creators {
         return new Dog(sc.next(), sc.nextInt(), sc.next());
 
     }
-
-
-
-
-
 }

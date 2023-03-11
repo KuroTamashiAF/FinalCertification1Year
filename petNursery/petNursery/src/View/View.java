@@ -5,6 +5,7 @@ import Model.Animal.Command;
 import Model.Animal.Dog;
 import Model.Model;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class View {
@@ -113,23 +114,28 @@ public class View {
         System.out.println("Здравствуйте выбирите пункт меню нажав " +
                 "соответствующую клавишу\n " + "В данном питомнике содержатся только кошки и собаки");
         System.out.println("Кто вас интересуетя:\n 1 - Кошки \n 2 - Собаки");
-
-        Scanner sc= new Scanner(System.in);
-        int choose = sc.nextInt();
-        switch (choose){
-            case 1:
-                System.out.println("Вы выбрали Кошек!");
-                workWithCat();
-                catFuctions(animalCatSelect());
-                break;
-            case 2:
-                System.out.println("Вы выбрали Собак!");
-                workWithdog();
-                dogFuctions(animalDogSelect());
-                break;
-            default :
-                throw new RuntimeException("Нижмите 1 или 2 ");
-        }
+            try {
+                Scanner sc = new Scanner(System.in);
+                int choose = sc.nextInt();
+                switch (choose) {
+                    case 1:
+                        System.out.println("Вы выбрали Кошек!");
+                        workWithCat();
+                        catFuctions(animalCatSelect());
+                        break;
+                    case 2:
+                        System.out.println("Вы выбрали Собак!");
+                        workWithdog();
+                        dogFuctions(animalDogSelect());
+                        break;
+                    default:
+                        throw new RuntimeException("Нижмите 1 или 2 ");
+                }
+            }catch (InputMismatchException e){
+                System.out.println("В поле возраст необходимо вводить цифры");
+            }catch (RuntimeException e){
+                System.out.println("Следуйте инструкциям вводите только те цифры что указаны");
+            }
 
     }
 
