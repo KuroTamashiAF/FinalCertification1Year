@@ -39,7 +39,7 @@ public class CatRepo {
                 return cat;
             }
         }
-        System.out.print("Такой кошечки не найлено занесите её в базу" );
+        System.out.print("Такой кошечки не найдено занесите её в базу" );
         Scanner sc = new Scanner(System.in);
         return new Cat(sc.next(), sc.nextInt(), sc.next());
     }

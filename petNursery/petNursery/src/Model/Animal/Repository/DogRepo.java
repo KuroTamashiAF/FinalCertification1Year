@@ -1,10 +1,10 @@
 package Model.Animal.Repository;
 
-import Model.Animal.Cat;
 import Model.Animal.Dog;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class DogRepo {
     private List<Dog> repoDogs;
@@ -22,7 +22,7 @@ public class DogRepo {
 
     }
 
-    public int findDog(String name) {
+    public int findDogIndex(String name) {
         int index = 0;
         for (Dog dog : repoDogs) {
             if (dog.getName().equals(name)) {
@@ -32,9 +32,19 @@ public class DogRepo {
         }
         return index;
     }
+    public Dog findDog(String name) {
+        for (Dog dog : repoDogs) {
+            if (dog.getName().equals(name)) {
+                return dog;
+            }
+        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Такой собачки в питомнике нету занесите её в базу");
+        return new Dog(sc.next(), sc.nextInt(), sc.next());
+    }
 
     public void giveAwayDog(String name) {
-        repoDogs.remove(findDog(name));
+        repoDogs.remove(findDogIndex(name));
     }
 
     public void showRepoDogs() {

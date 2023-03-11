@@ -10,6 +10,8 @@ import Model.Model;
 import View.Creators;
 import View.View;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         CatRepo catRepo = new CatRepo();
@@ -19,23 +21,14 @@ public class Main {
         Model model = new Model(iDogService,iCatService );
         Creators creators = new Creators();
         View view00 = new View(creators,model );
-        view00.menu();
-        view00.menu();
+        int chose = 99;
+        do {
+            view00.menu();
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Для завершения программы нажмите 0 для продолжения любую кроме Enter ");
+            chose = sc.nextInt();
+            }while (chose !=0);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
 
     }
-}

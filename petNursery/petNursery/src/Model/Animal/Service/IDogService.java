@@ -8,4 +8,6 @@ public interface IDogService {
     public void giveTheDog(String name);
     public void showListCommands(Dog dog);
     public void showAllDog();
+    public Dog selectDog(String name);
+
 }

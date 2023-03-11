@@ -1,6 +1,5 @@
 package Model.Animal.Service;
 
-import Model.Animal.Cat;
 import Model.Animal.Dog;
 import Model.Animal.Repository.DogRepo;
 
@@ -27,11 +26,16 @@ public class DogService implements IDogService{
 
     @Override
     public void showListCommands(Dog dog) {
-        dogRepo.getRepoDogs().get(dogRepo.findDog(dog.getName())).showCommands();
+        dogRepo.getRepoDogs().get(dogRepo.findDogIndex(dog.getName())).showCommands();
     }
 
     @Override
     public void showAllDog() {
         dogRepo.showRepoDogs();
+    }
+
+    @Override
+    public Dog selectDog(String name) {
+        return dogRepo.findDog(name);
     }
 }
