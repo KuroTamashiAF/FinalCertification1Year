@@ -26,6 +26,8 @@ public class DogService implements IDogService{
 
     @Override
     public void showListCommands(Dog dog) {
+        if (dog.getComandList().isEmpty())
+            System.out.println("Данное животное еще ничего не умеет! Научите!");
         dogRepo.getRepoDogs().get(dogRepo.findDogIndex(dog.getName())).showCommands();
     }
 

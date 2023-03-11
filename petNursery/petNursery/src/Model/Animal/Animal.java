@@ -18,6 +18,7 @@ public abstract class Animal {
         this.dateOfBirths = dateOfBirths;
         Counter.add();
         comandList = new ArrayList<>();
+        comandList.add(new Command("Лежать"));
     }
 
     public String getName() {
@@ -30,6 +31,10 @@ public abstract class Animal {
 
     public String getDateOfBirths() {
         return dateOfBirths;
+    }
+
+    public List<Command> getComandList() {
+        return comandList;
     }
 
     public void setName(String name) {

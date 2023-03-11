@@ -40,6 +40,7 @@ public class DogRepo {
         }
         Scanner sc = new Scanner(System.in);
         System.out.println("Такой собачки в питомнике нету занесите её в базу");
+        System.out.println("\nВведите через Enter  - Имя Возраст Дату рождения");
         return new Dog(sc.next(), sc.nextInt(), sc.next());
     }
 

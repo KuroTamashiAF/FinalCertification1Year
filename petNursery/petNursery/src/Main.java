@@ -13,8 +13,9 @@ import View.View;
 
 import java.util.Scanner;
 
+
 public class Main {
-    public static void main(String[] args) {
+    public static void run (){
         CatRepo catRepo = new CatRepo();
         DogRepo dogRepo = new DogRepo();
         Cat cat1 = new Cat("Масяня", 5, "05.05.2018");
@@ -39,8 +40,11 @@ public class Main {
             System.out.println("Для завершения программы нажмите 0, для продолжения любую цифру, " +
                     "кроме клавиши Enter ");
             chose = sc.nextInt();
-            }while (chose !=0);
-
-        }
+        }while (chose !=0);
 
     }
+
+    public static void main(String[] args) {
+        run();
+    }
+}

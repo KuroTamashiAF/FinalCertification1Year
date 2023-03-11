@@ -41,6 +41,7 @@ public class CatRepo {
         }
         System.out.print("Такой кошечки не найдено занесите её в базу" );
         Scanner sc = new Scanner(System.in);
+        System.out.println("\nВведите через Enter  - Имя Возраст Дату рождения");
         return new Cat(sc.next(), sc.nextInt(), sc.next());
     }
     public void giveAwayCat(String name){

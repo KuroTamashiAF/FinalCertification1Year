@@ -27,6 +27,8 @@ public class CatService implements ICatService{
 
     @Override
     public void showListCommands(Cat cat) {
+        if (cat.getComandList().isEmpty())
+            System.out.println("Данное животное еще ничего не умеет! Научите!");
         catRepo.getRepoCats().get(catRepo.findCatIndex(cat.getName())).showCommands();
     }
 
