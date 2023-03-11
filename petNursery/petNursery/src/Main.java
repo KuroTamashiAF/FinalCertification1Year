@@ -1,5 +1,3 @@
-import Model.Animal.Cat;
-import Model.Animal.Iadditional;
 import Model.Animal.Repository.CatRepo;
 import Model.Animal.Repository.DogRepo;
 import Model.Animal.Service.CatService;

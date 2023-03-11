@@ -4,6 +4,7 @@ import Model.Animal.Cat;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class CatRepo {
     private List<Cat> repoCats;
@@ -19,7 +20,7 @@ public class CatRepo {
         repoCats.add(cat);
         
     }
-    public int findCat(String name)
+    public int findCatIndex(String name)
     {
         int index =0;
         for (Cat cat: repoCats) {
@@ -30,8 +31,20 @@ public class CatRepo {
         }
         return index;
     }
+    public Cat findCat(String name){
+
+
+        for (Cat cat: repoCats) {
+            if (cat.getName().equals(name)){
+                return cat;
+            }
+        }
+        System.out.print("Такой кошечки не найлено занесите её в базу" );
+        Scanner sc = new Scanner(System.in);
+        return new Cat(sc.next(), sc.nextInt(), sc.next());
+    }
     public void giveAwayCat(String name){
-        repoCats.remove(findCat(name));
+        repoCats.remove(findCatIndex(name));
     }
     public void showRepoCats(){
         for (Cat cat: repoCats) {

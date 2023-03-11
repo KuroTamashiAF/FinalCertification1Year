@@ -1,5 +1,6 @@
 package View;
 
+import Model.Animal.Cat;
 import Model.Model;
 
 import java.util.Scanner;
@@ -25,6 +26,15 @@ public class View {
         return creators;
     }
 
+    public Cat animalCatSelect(){
+        System.out.println("Что бы выбрать животное введите его имя ");
+        Scanner sc = new Scanner(System.in);
+        return model.getICatService().selectCat(sc.next()).;
+    }
+
+
+
+
     public void chooseCreateAnimal() {
 
         System.out.println(" Кого вы хотите завести нажмите 1 " +
@@ -34,6 +44,11 @@ public class View {
         switch (chooseAnimal){
             case 1:
                 model.getICatService().addCatShelter(creators.creatingCat());
+
+                
+
+
+
                 break;
             case 2:
                 model.getIDogService().addDogShelter(creators.creatingDog());

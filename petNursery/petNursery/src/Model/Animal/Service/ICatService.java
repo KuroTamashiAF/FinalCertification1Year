@@ -7,6 +7,7 @@ public interface ICatService {
     public void giveTheKitty(String name);
     public void showListCommands(Cat cat);
     public void showAllKitty();
+    public Cat selectCat(String name);
 
 
 }
