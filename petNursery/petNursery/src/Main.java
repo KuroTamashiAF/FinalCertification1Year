@@ -17,7 +17,12 @@ public class Main {
         Model model = new Model(iDogService,iCatService );
         Creators creators = new Creators();
         View view00 = new View(creators,model );
-        view00.menu();
+
+            view00.menu();
+        for (int i =0; i<2;i++) {
+            view00.animalFuctions(view00.animalCatSelect());
+        }
+
 
 
 

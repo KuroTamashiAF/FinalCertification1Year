@@ -38,7 +38,7 @@ public class CatService implements ICatService{
 
     @Override
     public Cat selectCat(String name) {
-        catRepo.findCatIndex(name);
+        return catRepo.findCat(name);
 
     }
 
