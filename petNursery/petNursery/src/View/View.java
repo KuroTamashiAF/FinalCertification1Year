@@ -51,21 +51,21 @@ public class View {
         return model.getICatService().selectCat(sc.next());
 
     }
-    public void chooseCreateAnimal() {
+    public void workWithCat() {
 
-        System.out.println(" Кого вы хотите завести нажмите 1 " +
-                "если Кошечку или 2 если Собачку");
+        System.out.println("Завести новую кошечку нажмите 1 \n"+
+                "Посмотреть всех кошек в питомнике нажмите 2");
         Scanner sc = new Scanner(System.in);
         int chooseAnimal =sc.nextInt();
         switch (chooseAnimal){
             case 1:
                 model.getICatService().addCatShelter(creators.creatingCat());
+
                 break;
             case 2:
-                model.getIDogService().addDogShelter(creators.creatingDog());
+                model.getICatService().showAllKitty();
+            default :
                 break;
-            default:
-                throw new RuntimeException("Введите 1 или 2 ");
         }
 
         }
@@ -74,23 +74,24 @@ public class View {
     }
     public void menu(){
         System.out.println("Здравствуйте выбирите пункт меню нажав " +
-                "соответствующую клавишу");
-        System.out.println("Нажмите 1 что бы завести новное животное;\n"+
-                "Нажмите 2 посмотреть всех животных");
+                "соответствующую клавишу\n " + "В данном питомнике содержатся только кошки и собаки");
+        System.out.println("Кто вас интересуетя:\n 1 - Кошки \n 2 - Собаки");
+
         Scanner sc= new Scanner(System.in);
         int choose = sc.nextInt();
         switch (choose){
             case 1:
-                chooseCreateAnimal();
+                System.out.println("Вы выбрали Кошек!");
+                workWithCat();
+                animalFuctions(animalCatSelect());
                 break;
             case 2:
-                lookAll();
+                System.out.println("Вы выбрали Собак!");
+
+
                 break;
-            default:
+            default :
                 throw new RuntimeException("Нижмите 1 или 2 ");
-
-
-
         }
 
     }

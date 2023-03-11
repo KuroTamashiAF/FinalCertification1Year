@@ -47,6 +47,9 @@ public class CatRepo {
         repoCats.remove(findCatIndex(name));
     }
     public void showRepoCats(){
+        if (repoCats.isEmpty())
+            throw new RuntimeException("В питомнике нет клшек =((");
+
         for (Cat cat: repoCats) {
             System.out.printf("Имя %s, возраст %d , дата рождения %s\n",
                     cat.getName(), cat.getAge(),cat.getDateOfBirths()  );
