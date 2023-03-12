@@ -5,16 +5,22 @@
 хомяками) и Вьючные животными заполнив файл Лошадьми, верблюдами и
 ослы), а затем объединить их. Просмотреть содержимое созданного файла.
 Переименовать файл, дав ему новое имя (Друзья человека).
+
 ![Скрин](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/1.jpg?raw=true)
 2. Создать директорию, переместить файл туда
+
  ![Скрин](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/2.jpg?raw=true)
 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
 из этого репозитория.
+
 ![Скрин](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/3.jpg?raw=true)
 4. Установить и удалить deb-пакет с помощью dpkg.
+
 ![изображение](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/4.jpg?raw=true)
+
 5. Выложить историю команд в терминале ubuntu
 **История получилась длинная будет несколько скринов**
+
 ![Скрин](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/5.jpg?raw=true)
 ![Скрин](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/6.jpg?raw=true)
 ![скрин](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/7.jpg?raw=true)
