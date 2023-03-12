@@ -7,9 +7,11 @@
 Переименовать файл, дав ему новое имя (Друзья человека).
 
 ![Скрин](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/1.jpg?raw=true)
+
 2. Создать директорию, переместить файл туда
 
  ![Скрин](https://github.com/KuroTamashiAF/FinalCertification1Year/blob/main/screenshots/2.jpg?raw=true)
+ 
 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
 из этого репозитория.
 
